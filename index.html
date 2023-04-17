@@ -1,568 +1,830 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brow Lash Boutique</title>
     <link rel="website icon" href="images/logo.png" />
-    <link href="https://unpkg.com/tailwindcss@^2.2.7/dist/tailwind.min.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2.2.7/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js"
+      defer
+    ></script>
     <style>
-        .serif {
-            font-family: 'Zilla Slab', serif;
-        }
+      .serif {
+        font-family: "Zilla Slab", serif;
+      }
 
-        [x-cloak] { display: none; }
+      [x-cloak] {
+        display: none;
+      }
 
-        .grid-indigo {
-            background-image: radial-gradient(#5a67d8 2px, transparent 2px);
-            background-size: 16px 16px;
-        }
+      .grid-indigo {
+        background-image: radial-gradient(#5a67d8 2px, transparent 2px);
+        background-size: 16px 16px;
+      }
     </style>
-</head>
+  </head>
 
-<body class="bg-[#e8ac9b]">
+  <body class="bg-[#e8ac9b]">
     <!-- Navbar  -->
-    <header class="h-20 bg-white  sticky top-0 z-50">
-        <nav class="relative px-2 py-2 ">
-            <div class="container mx-auto flex justify-between items-center text-xl">
-                <img src="images/logo.png" alt="logo" />
+    <header class="h-20 bg-white sticky top-0 z-50">
+      <nav class="relative px-2 py-2">
+        <div
+          class="container mx-auto flex justify-between items-center text-xl"
+        >
+          <img src="images/logo.png" alt="logo" />
 
-                <ul class="hidden md:flex space-x-6">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li class="flex relative group">
-                        <a href="#" class="mr-1">Training Courses</a>
-                        <i class="fa-solid fa-chevron-down fa-2xs pt-3"></i>
-                        <!-- Submenu starts -->
-                        <ul
-                            class="absolute bg-white p-3 w-60 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg">
-                            <li class="text-md hover:bg-slate-100 leading-8">
-                                <a href="#">Eyelash stylist training</a>
-                            </li>
-                            <li class="text-md hover:bg-slate-100 leading-8">
-                                <a href="#">volume training</a>
-                            </li>
-                            <li class="text-md hover:bg-slate-100 leading-8">
-                                <a href="#">online training</a>
-                            </li>
-                            <li class="text-md hover:bg-slate-100 leading-8">
-                                <a href="#">Lash trainer training</a>
-                            </li>
-                        </ul>
-                        <!-- Submenu ends -->
-                    </li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+          <ul class="hidden md:flex space-x-6">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Galerie</a></li>
+            <li class="flex relative group">
+              <a href="#services" class="mr-1">Trainingskurse</a>
+              <i class="fa-solid fa-chevron-down fa-2xs pt-3"></i>
+              <!-- Submenu starts -->
+              <ul
+                class="absolute bg-white p-3 w-60 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg"
+              >
+                <li class="text-md hover:bg-slate-100 leading-8">
+                  <a href="#">Kosmetik </a>
+                </li>
+                <li class="text-md hover:bg-slate-100 leading-8">
+                  <a href="#">BB-glow</a>
+                </li>
+                <li class="text-md hover:bg-slate-100 leading-8">
+                  <a href="#">Wimpernverlängerung </a>
+                </li>
+                <li class="text-md hover:bg-slate-100 leading-8">
+                  <a href="#">Lash-lifting</a>
+                </li>
+                <li class="text-md hover:bg-slate-100 leading-8">
+                  <a href="#">Permanent Make-up</a>
+                </li>
+                <li class="text-md hover:bg-slate-100 leading-8">
+                  <a href="#">Microblading </a>
+                </li>
+                <li class="text-md hover:bg-slate-100 leading-8">
+                  <a href="#">Ombre Augenbrauen </a>
+                </li>
+              </ul>
+              <!-- Submenu ends -->
+            </li>
+            <li><a href="#">über</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
 
-                <a href="#"
-                    class="bg-[#aa6052] px-5 py-2 rounded-md hover:bg-[#7d4134] text-white text-md hidden md:flex"
-                    role="button">
-                    WhatsApp
-                </a>
+          <a
+            href="#"
+            class="bg-[#aa6052] px-5 py-2 rounded-md hover:bg-[#7d4134] text-white text-md hidden md:flex"
+            role="button"
+          >
+            WhatsApp
+          </a>
 
-                <!-- Mobile menu icon -->
-                <button id="mobile-icon" class="md:hidden">
-                    <i onclick="changeIcon(this)" class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-
-            <!-- Mobile menu -->
-            <div class="md:hidden flex justify-center mt-3 w-full">
-                <div id="mobile-menu" class="mobile-menu absolute top-23 w-full">
-                    <!-- add hidden here later -->
-                    <ul class="bg-gray-100 shadow-lg leading-9 font-bold h-screen">
-                        <li class="border-b-2 border-white hover:bg-[#aa6052] hover:text-white pl-4">
-                            <a href="index.html" class="block pl-7">Home</a>
-                        </li>
-                        <li class="border-b-2 border-white hover:bg-[#aa6052] hover:text-white pl-4">
-                            <a href="#" class="block pl-7">Gallery</a>
-                        </li>
-                        <li class="border-b-2 border-white hover:bg-[#aa6052] hover:text-white">
-                            <a href="#" class="block pl-11">Training Courses <i
-                                    class="fa-solid fa-chevron-down fa-2xs pt-4"></i></a>
-
-                            <!-- Submenu starts -->
-                            <ul class="bg-white text-gray-800 w-full">
-                                <li class="text-sm leading-8 font-normal hover:bg-[#7d4134] hover:text-white">
-                                    <a class="block pl-16" href="#">Eyelash stylist training</a>
-                                </li>
-                                <li class="text-sm leading-8 font-normal hover:bg-[#7d4134] hover:text-white">
-                                    <a class="block pl-16" href="#">volume training</a>
-                                </li>
-                                <li class="text-sm leading-8 font-normal hover:bg-[#7d4134] hover:text-white">
-                                    <a class="block pl-16" href="#">online training</a>
-                                </li>
-                                <li class="text-sm leading-8 font-normal hover:bg-[#7d4134] hover:text-white">
-                                    <a class="block pl-16" href="#">Lash trainer training</a>
-                                </li>
-                            </ul>
-                            <!-- Submenu ends -->
-                        </li>
-                        <li class="border-b-2 border-white hover:bg-[#aa6052] hover:text-white pl-4">
-                            <a href="#" class="block pl-7">About</a>
-                        </li>
-                        <li class="border-b-2 border-white hover:bg-[#aa6052] hover:text-white pl-4">
-                            <a href="#" class="block pl-7">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div class="flex flex-col items-center justify-between w-full mb-10 lg:flex-row">
-            <div class="mb-16 lg:mb-0 lg:max-w-lg lg:pr-5">
-                <div class="max-w-xl mb-6">
-                    <div>
-                        <p
-                            class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-                            Latest
-                        </p>
-                    </div>
-                    <h2
-                        class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                        Training Courses for<br class="hidden md:block" />
-                        Eyelash, Volume
-                        <span class="inline-block text-deep-purple-accent-400">Etc..</span>
-                    </h2>
-                    <p class="text-base text-gray-700 md:text-lg">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
-                    </p>
-                </div>
-                <div class="flex items-center space-x-3">
-                    <a href="#" class="bg-[#7d4134] px-5 py-2 rounded-md hover:bg-[#7d5134] text-white text-md md:flex"
-                        role="button">
-                        Know More..
-                    </a>
-                </div>
-            </div>
-            <div class="flex items-center justify-center lg:w-1/2">
-                <div class="w-2/5">
-                    <img class="object-cover" src="https://kitwind.io/assets/kometa/one-girl-phone.png" alt="" />
-                </div>
-                <div class="w-5/12 -ml-16 lg:-ml-32">
-                    <img class="object-cover" src="https://kitwind.io/assets/kometa/two-girls-phone.png" alt="" />
-                </div>
-            </div>
+          <!-- Mobile menu icon -->
+          <button id="mobile-icon" class="md:hidden">
+            <i onclick="changeIcon(this)" class="fa-solid fa-bars"></i>
+          </button>
         </div>
-        <a href="#services" aria-label="Scroll down"
-            class="flex items-center justify-center w-10 h-10 mx-auto text-gray-600 duration-300 transform border border-gray-400 rounded-full hover:text-deep-purple-accent-400 hover:border-deep-purple-accent-400 hover:shadow hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
-                <path
-                    d="M10.293,3.293,6,7.586,1.707,3.293A1,1,0,0,0,.293,4.707l5,5a1,1,0,0,0,1.414,0l5-5a1,1,0,1,0-1.414-1.414Z">
-                </path>
-            </svg>
-        </a>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden flex justify-center mt-3 w-full">
+          <div id="mobile-menu" class="mobile-menu absolute top-23 w-full">
+            <!-- add hidden here later -->
+            <ul class="bg-gray-100 shadow-lg leading-9 font-bold h-screen">
+              <li
+                class="border-b-2 border-white hover:bg-[#aa6052] hover:text-white pl-4"
+              >
+                <a href="index.html" class="block pl-7">Home</a>
+              </li>
+              <li
+                class="border-b-2 border-white hover:bg-[#aa6052] hover:text-white pl-4"
+              >
+                <a href="#" class="block pl-7">Galerie</a>
+              </li>
+              <li
+                class="border-b-2 border-white hover:bg-[#aa6052] hover:text-white"
+              >
+                <a href="#services" class="block pl-11"
+                  >Trainingskurse
+                  <i class="fa-solid fa-chevron-down fa-2xs pt-4"></i
+                ></a>
+
+                <!-- Submenu starts -->
+                <ul class="bg-white text-gray-800 w-full">
+                  <li
+                    class="text-sm leading-8 font-normal hover:bg-[#7d4134] hover:text-white"
+                  >
+                    <a class="block pl-16" href="#">Kosmetik</a>
+                  </li>
+                  <li
+                    class="text-sm leading-8 font-normal hover:bg-[#7d4134] hover:text-white"
+                  >
+                    <a class="block pl-16" href="#">BB-glow</a>
+                  </li>
+                  <li
+                    class="text-sm leading-8 font-normal hover:bg-[#7d4134] hover:text-white"
+                  >
+                    <a class="block pl-16" href="#">Wimpernverlängerung</a>
+                  </li>
+                  <li
+                    class="text-sm leading-8 font-normal hover:bg-[#7d4134] hover:text-white"
+                  >
+                    <a class="block pl-16" href="#">Lash-lifting</a>
+                  </li>
+                  <li
+                    class="text-sm leading-8 font-normal hover:bg-[#7d4134] hover:text-white"
+                  >
+                    <a class="block pl-16" href="#">Permanent Make-up</a>
+                  </li>
+                  <li
+                    class="text-sm leading-8 font-normal hover:bg-[#7d4134] hover:text-white"
+                  >
+                    <a class="block pl-16" href="#">Microblading</a>
+                  </li>
+                  <li
+                    class="text-sm leading-8 font-normal hover:bg-[#7d4134] hover:text-white"
+                  >
+                    <a class="block pl-16" href="#">Ombre Augenbrauen</a>
+                  </li>
+                </ul>
+                <!-- Submenu ends -->
+              </li>
+              <li
+                class="border-b-2 border-white hover:bg-[#aa6052] hover:text-white pl-4"
+              >
+                <a href="#" class="block pl-7">über</a>
+              </li>
+              <li
+                class="border-b-2 border-white hover:bg-[#aa6052] hover:text-white pl-4"
+              >
+                <a href="#" class="block pl-7">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div
+      class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+    >
+      <div
+        class="flex flex-col items-center justify-between w-full mb-10 lg:flex-row"
+      >
+        <div class="mb-16 lg:mb-0 lg:max-w-lg lg:pr-5">
+          <div class="max-w-xl mb-6">
+            <div>
+              <p
+                class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400"
+              >
+                Hey!
+              </p>
+            </div>
+            <h2
+              class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none"
+            >
+              Herzlich willkommen bei der <br class="hidden md:block" />
+              Brow & lash Boutique<span
+                class="inline-block text-deep-purple-accent-400"
+                >...</span
+              >
+            </h2>
+            <p class="text-base text-gray-700 md:text-lg">
+              Melden Sie sich für Kurse an, um exklusive Wimpernverlängerung,
+              klassisches Permanent-Make-up oder Permanent-Make-up für
+              Augenbrauen zu lernen. Diese Kurse vermitteln wertvolle
+              Fähigkeiten für diejenigen, die sich für die Schönheitsbranche
+              interessieren oder ihre Dienstleistungen verbessern möchten.
+            </p>
+          </div>
+          <div class="flex items-center space-x-3">
+            <a
+              href="#"
+              class="bg-[#7d4134] px-5 py-2 rounded-md hover:bg-[#7d5134] text-white text-md md:flex"
+              role="button"
+            >
+              Know More..
+            </a>
+          </div>
+        </div>
+        <div class="flex items-center justify-center lg:w-1/2">
+          <div class="w-2/5">
+            <img
+              class="object-cover"
+              src="https://kitwind.io/assets/kometa/one-girl-phone.png"
+              alt=""
+            />
+          </div>
+          <div class="w-5/12 -ml-16 lg:-ml-32">
+            <img
+              class="object-cover"
+              src="https://kitwind.io/assets/kometa/two-girls-phone.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <a
+        href="#services"
+        aria-label="Scroll down"
+        class="flex items-center justify-center w-10 h-10 mx-auto text-gray-600 duration-300 transform border border-gray-400 rounded-full hover:text-deep-purple-accent-400 hover:border-deep-purple-accent-400 hover:shadow hover:scale-110"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="12"
+          height="12"
+          viewBox="0 0 12 12"
+          fill="currentColor"
+        >
+          <path
+            d="M10.293,3.293,6,7.586,1.707,3.293A1,1,0,0,0,.293,4.707l5,5a1,1,0,0,0,1.414,0l5-5a1,1,0,1,0-1.414-1.414Z"
+          ></path>
+        </svg>
+      </a>
     </div>
     <!-- Hero Section Ends  -->
 
     <!-- Services Section start  -->
     <section id="services">
-        <div class="thirteen">
-            <h1>BEAUTY TRAINING</h1>
-        </div>
-        <main class="main1">
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <img src="https://media.istockphoto.com/id/1271786155/photo/close-up-portrait-of-the-beautiful-girl.jpg?s=1024x1024&w=is&k=20&c=ZPgIlGMC3nMo6Z4n0EiTEneE_kb-xuJJLOpyl8EbXQM="
-                        alt="">
-                    <div class="overlay">
-                        <span>Eyelash Training</span>
-                        <div>
-                            <h2> 1.800,00 €</h2>
-                            <p>By Claudia M. Bucar</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="https://media.istockphoto.com/id/1271786155/photo/close-up-portrait-of-the-beautiful-girl.jpg?s=1024x1024&w=is&k=20&c=ZPgIlGMC3nMo6Z4n0EiTEneE_kb-xuJJLOpyl8EbXQM="
-                        alt="">
-                    <div class="overlay">
-                        <span>Eyelash Training</span>
-                        <div>
-                            <h2> 1.800,00 €</h2>
-                            <p>By Claudia M. Bucar</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="https://media.istockphoto.com/id/1271786155/photo/close-up-portrait-of-the-beautiful-girl.jpg?s=1024x1024&w=is&k=20&c=ZPgIlGMC3nMo6Z4n0EiTEneE_kb-xuJJLOpyl8EbXQM="
-                        alt="">
-                    <div class="overlay">
-                        <span>Eyelash Training</span>
-                        <div>
-                            <h2> 1.800,00 €</h2>
-                            <p>By Claudia M. Bucar</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="https://media.istockphoto.com/id/1271786155/photo/close-up-portrait-of-the-beautiful-girl.jpg?s=1024x1024&w=is&k=20&c=ZPgIlGMC3nMo6Z4n0EiTEneE_kb-xuJJLOpyl8EbXQM="
-                        alt="">
-                    <div class="overlay">
-                        <span>Eyelash Training</span>
-                        <div>
-                            <h2> 1.800,00 €</h2>
-                            <p>By Claudia M. Bucar</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </section>
-    <div class="thirteen">
-        <h1>Customers reviews</h1> 
-    </div>
-    <div class="my-10 md:my-24 container mx-auto flex flex-col md:flex-row shadow-sm overflow-hidden" x-data="{ testimonialActive: 2 }" x-cloak>
-        <div class="relative w-full py-2 md:py-24 bg-[#7d4134] md:w-1/2 flex flex-col item-center justify-center">
-
-            <div class="relative text-2xl md:text-5xl py-2 px-6 md:py-6 md:px-1 md:w-64 md:mx-auto text-indigo-100 font-semibold leading-tight tracking-tight mb-0 z-20">
-                <span class="md:block">What Our</span>
-                <span class="md-block">Customers</span>
-                <span class="block">Are Saying!</span>
-            </div>
-
-            <div class="absolute right-0 bottom-0 mr-4 mb-4 hidden md:block">
-                <button 
-                    class="rounded-l-full border-r bg-gray-100 text-gray-500 focus:outline-none hover:text-[#7d4134] font-bold w-12 h-10"
-                    x-on:click="testimonialActive = testimonialActive === 1 ? 3 : testimonialActive - 1">
-                    &#8592;
-                </button><button 
-                    class="rounded-r-full bg-gray-100 text-gray-500 focus:outline-none hover:text-[#7d4134] font-bold w-12 h-10"
-                    x-on:click="testimonialActive = testimonialActive >= 3 ? 1 : testimonialActive + 1">
-                    &#8594;
-                  </button>
-            </div>
-        </div>
-
-        <div class="bg-gray-100 md:w-1/2">
-            <div class="flex flex-col h-full relative">
-
-                <div class="absolute top-0 left-0 mt-3 ml-4 md:mt-5 md:ml-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="text-[#F3D8D0] fill-current w-12 h-12 md:w-16 md:h-16" viewBox="0 0 24 24"><path d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L9.758 4.03c0 0-.218.052-.597.144C8.97 4.222 8.737 4.278 8.472 4.345c-.271.05-.56.187-.882.312C7.272 4.799 6.904 4.895 6.562 5.123c-.344.218-.741.4-1.091.692C5.132 6.116 4.723 6.377 4.421 6.76c-.33.358-.656.734-.909 1.162C3.219 8.33 3.02 8.778 2.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C2.535 17.474 4.338 19 6.5 19c2.485 0 4.5-2.015 4.5-4.5S8.985 10 6.5 10zM17.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L20.758 4.03c0 0-.218.052-.597.144-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162C14.219 8.33 14.02 8.778 13.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C13.535 17.474 15.338 19 17.5 19c2.485 0 4.5-2.015 4.5-4.5S19.985 10 17.5 10z"/></svg>
-                </div>
-                 
-                <div class="h-full relative z-10">
-                    <div x-show.immediate="testimonialActive === 1">
-                        <p class="text-gray-600  font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl" x-show.transition="testimonialActive == 1">
-                            Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-                        </p>
-                    </div>
-                    
-                    <div x-show.immediate="testimonialActive === 2">
-                        <p class="text-gray-600  font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl" x-show.transition="testimonialActive == 2">
-                            Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
-                        </p>
-                    </div>
-                    
-                    <div x-show.immediate="testimonialActive === 3"> 
-                        <p class="text-gray-600  font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl" x-show.transition="testimonialActive == 3">
-                            Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex my-4 justify-center items-center">
-                    <button 
-                        @click.prevent="testimonialActive = 1" 
-                        class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block rounded-full mx-2"
-                        :class="{'h-12 w-12 opacity-25 bg-[#f3d8d0] text-gray-600': testimonialActive != 1, 'h-16 w-16 opacity-100 bg-[#7D4134] text-white': testimonialActive == 1 }"	
-                    >JD</button>
-                    <button 
-                        @click.prevent="testimonialActive = 2" 
-                        class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-16 w-16 inline-block bg-indigo-600 rounded-full mx-2"
-                        :class="{'h-12 w-12 opacity-25 bg-[#f3d8d0] text-gray-600': testimonialActive != 2, 'h-16 w-16 opacity-100 bg-[#7D4134] text-white': testimonialActive == 2 }"	
-                    >WD</button>
-                    <button 
-                        @click.prevent="testimonialActive = 3" 
-                        class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-full mx-2"
-                        :class="{'h-12 w-12 opacity-25 bg-[#f3d8d0] text-gray-600': testimonialActive != 3, 'h-16 w-16 opacity-100 bg-[#7D4134] text-white': testimonialActive == 3 }"
-                    >JW</button>
-                </div>
-                 
-                <div class="flex justify-center px-6 pt-2 pb-6 md:py-6">
-                    <div class="text-center" x-show="testimonialActive == 1">
-                        <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">John Doe</h2>
-                        <small class="text-gray-500 text-xs md:text-sm truncate">CEO, ABC Inc.</small>
-                    </div>
-
-                    <div class="text-center" x-show="testimonialActive == 2">
-                        <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">Winter Doe</h2>
-                        <small class="text-gray-500 text-xs md:text-sm truncate">CTO, XYZ Corp.</small>
-                    </div>
-
-                    <div class="text-center" x-show="testimonialActive == 3">
-                        <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">John Wick</h2>
-                        <small class="text-gray-500 text-xs md:text-sm truncate">Product Manager, Fake Corp.</small>
-                    </div>	 
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer aria-label="Site Footer" class="bg-white lg:grid lg:grid-cols-5">
-        <div class="relative block h-32 lg:col-span-2 lg:h-full">
-          <img
-            src="https://images.unsplash.com/photo-1470072508653-1be229b63562?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-            alt=""
-            class="absolute inset-0 object-cover w-full h-full"
-          />
-        </div>
-      
-        <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
-          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
-            <div>
-              <p>
-                <span class="text-xs tracking-wide text-gray-500 uppercase">
-                  Call us
-                </span>
-      
-                <a
-                  href="#"
-                  class="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
-                >
-                  0123456789
-                </a>
-              </p>
-      
-              <ul class="mt-8 space-y-1 text-sm text-gray-700">
-                <li>Monday to Friday: 10am - 5pm</li>
-                <li>Weekend: 10am - 3pm</li>
-              </ul>
-      
-              <ul class="flex gap-6 mt-8">
-                <li>
-                  <a
-                    href="/"
-                    rel="noreferrer"
-                    target="_blank"
-                    class="text-gray-700 transition hover:opacity-75"
-                  >
-                    <span class="sr-only">Facebook</span>
-      
-                    <svg
-                      class="w-6 h-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-      
-                <li>
-                  <a
-                    href="/"
-                    rel="noreferrer"
-                    target="_blank"
-                    class="text-gray-700 transition hover:opacity-75"
-                  >
-                    <span class="sr-only">Instagram</span>
-      
-                    <svg
-                      class="w-6 h-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-      
-                <li>
-                  <a
-                    href="/"
-                    rel="noreferrer"
-                    target="_blank"
-                    class="text-gray-700 transition hover:opacity-75"
-                  >
-                    <span class="sr-only">Twitter</span>
-      
-                    <svg
-                      class="w-6 h-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-                      />
-                    </svg>
-                  </a>
-                </li>
-      
-                <li>
-                  <a
-                    href="/"
-                    rel="noreferrer"
-                    target="_blank"
-                    class="text-gray-700 transition hover:opacity-75"
-                  >
-                    <span class="sr-only">GitHub</span>
-      
-                    <svg
-                      class="w-6 h-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-      
-                <li>
-                  <a
-                    href="/"
-                    rel="noreferrer"
-                    target="_blank"
-                    class="text-gray-700 transition hover:opacity-75"
-                  >
-                    <span class="sr-only">Dribbble</span>
-      
-                    <svg
-                      class="w-6 h-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-      
-            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <div class="sub-heading">
+        <h1>Trainingskurse</h1>
+      </div>
+      <main class="main1">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="images/cosmetics/cosmetics.jpg" alt="" />
+            <div class="overlay">
+              <span>Kosmetik</span>
               <div>
-                <p class="font-medium text-gray-900">Services</p>
-      
-                <nav aria-label="Footer Navigation - Services" class="mt-6">
-                  <ul class="space-y-4 text-sm">
-                    <li>
-                      <a href="#" class="text-gray-700 transition hover:opacity-75">
-                        1on1 Coaching
-                      </a>
-                    </li>
-      
-                    <li>
-                      <a href="#" class="text-gray-700 transition hover:opacity-75">
-                        Company Review
-                      </a>
-                    </li>
-      
-                    <li>
-                      <a href="#" class="text-gray-700 transition hover:opacity-75">
-                        Accounts Review
-                      </a>
-                    </li>
-      
-                    <li>
-                      <a href="#" class="text-gray-700 transition hover:opacity-75">
-                        HR Consulting
-                      </a>
-                    </li>
-      
-                    <li>
-                      <a href="#" class="text-gray-700 transition hover:opacity-75">
-                        SEO Optimisation
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-      
-              <div>
-                <p class="font-medium text-gray-900">Company</p>
-      
-                <nav aria-label="Footer Navigation - Company" class="mt-6">
-                  <ul class="space-y-4 text-sm">
-                    <li>
-                      <a href="#" class="text-gray-700 transition hover:opacity-75">
-                        About
-                      </a>
-                    </li>
-      
-                    <li>
-                      <a href="#" class="text-gray-700 transition hover:opacity-75">
-                        Meet the Team
-                      </a>
-                    </li>
-      
-                    <li>
-                      <a href="#" class="text-gray-700 transition hover:opacity-75">
-                        Accounts Review
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+                <h2>Ausbildung</h2>
+                <p>By Claudia A. Bucar</p>
               </div>
             </div>
           </div>
-      
-          <div class="pt-12 mt-12 border-t border-gray-100">
-            <div class="sm:flex sm:items-center sm:justify-between">
-              <nav aria-label="Footer Navigation - Support">
-                <ul class="flex flex-wrap gap-4 text-xs">
+          <div class="item">
+            <img src="images/cosmetics/bbglow.jpg" alt="" />
+            <div class="overlay">
+              <span>BB-glow</span>
+              <div>
+                <h2>Ausbildung</h2>
+                <p>By Claudia A. Bucar</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/cosmetics/eyelashextensions.jpg" alt="" />
+            <div class="overlay">
+              <span>Wimpernverlängerung</span>
+              <div>
+                <h2>Ausbildung</h2>
+                <p>By Claudia A. Bucar</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/cosmetics/lashlifting.jpg" alt="" />
+            <div class="overlay">
+              <span>Lash-lifting</span>
+              <div>
+                <h2>Ausbildung</h2>
+                <p>By Claudia A. Bucar</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/cosmetics/permanentmakeup.jpg" alt="" />
+            <div class="overlay">
+              <span>Permanent Make-up</span>
+              <div>
+                <h2>Ausbildung</h2>
+                <p>By Claudia A. Bucar</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/cosmetics/microblading.jpg" alt="" />
+            <div class="overlay">
+              <span>Microblading</span>
+              <div>
+                <h2>Ausbildung</h2>
+                <p>By Claudia A. Bucar</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/cosmetics/ombreeyebrows.jpg" alt="" />
+            <div class="overlay">
+              <span>Ombre Augenbrauen</span>
+              <div>
+                <h2>Ausbildung</h2>
+                <p>By Claudia A. Bucar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <section class="">
+      <div class="sub-heading">
+        <h1>Galerie</h1>
+      </div>
+      <div class="mx-auto px-8 py-16 lg:py-24 relative">
+        <div class="flex flex-col md:flex-row gap-2">
+          <div class="flex flex-1 flex-col shadow-lg ">
+            <div class="flex flex-1 flex-col">
+              <!-- img_01 -->
+              <img
+                class="object-cover h-full"
+                src="images/cosmetics/bbglow.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="flex flex-1  shadow-lg">
+            <div class="grid grid-cols-2 gap-2  shadow-xl">
+              <div>
+                <!-- img_02 -->
+                <img
+                  class="object-cover h-full"
+                  src="images/cosmetics/cosmetics.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <!-- img_03 -->
+                <img
+                  class="object-cover h-full"
+                  src="images/cosmetics/eyelashextensions.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <!-- img_04 -->
+                <img
+                  class="object-cover h-full"
+                  src="images/cosmetics/lashlifting.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <!-- img_05 -->
+                <img
+                  class="object-cover h-full"
+                  src="images/cosmetics/ombreeyebrows.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial  -->
+    <div class="sub-heading">
+      <h1>Kundenbewertungen</h1>
+    </div>
+    <div
+      class="my-10 md:my-24 container mx-auto flex flex-col md:flex-row shadow-sm overflow-hidden"
+      x-data="{ testimonialActive: 2 }"
+      x-cloak
+    >
+      <div
+        class="relative w-full py-2 md:py-24 bg-[#7d4134] md:w-1/2 flex flex-col item-center justify-center"
+      >
+        <div
+          class="relative text-2xl md:text-5xl py-2 px-6 md:py-6 md:px-1 md:w-64 md:mx-auto text-indigo-100 font-semibold leading-tight tracking-tight mb-0 z-20"
+        >
+          <span class="md:block">Bewertungen </span>
+          <span class="md-block">von zufriedenen</span>
+          <span class="block">Kunden</span>
+        </div>
+
+        <div class="absolute right-0 bottom-0 mr-4 mb-4 hidden md:block">
+          <button
+            class="rounded-l-full border-r bg-gray-100 text-gray-500 focus:outline-none hover:text-[#7d4134] font-bold w-12 h-10"
+            x-on:click="testimonialActive = testimonialActive === 1 ? 3 : testimonialActive - 1"
+          >
+            &#8592;</button
+          ><button
+            class="rounded-r-full bg-gray-100 text-gray-500 focus:outline-none hover:text-[#7d4134] font-bold w-12 h-10"
+            x-on:click="testimonialActive = testimonialActive >= 3 ? 1 : testimonialActive + 1"
+          >
+            &#8594;
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 md:w-1/2">
+        <div class="flex flex-col h-full relative">
+          <div class="absolute top-0 left-0 mt-3 ml-4 md:mt-5 md:ml-12">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-[#F3D8D0] fill-current w-12 h-12 md:w-16 md:h-16"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L9.758 4.03c0 0-.218.052-.597.144C8.97 4.222 8.737 4.278 8.472 4.345c-.271.05-.56.187-.882.312C7.272 4.799 6.904 4.895 6.562 5.123c-.344.218-.741.4-1.091.692C5.132 6.116 4.723 6.377 4.421 6.76c-.33.358-.656.734-.909 1.162C3.219 8.33 3.02 8.778 2.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C2.535 17.474 4.338 19 6.5 19c2.485 0 4.5-2.015 4.5-4.5S8.985 10 6.5 10zM17.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L20.758 4.03c0 0-.218.052-.597.144-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162C14.219 8.33 14.02 8.778 13.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C13.535 17.474 15.338 19 17.5 19c2.485 0 4.5-2.015 4.5-4.5S19.985 10 17.5 10z"
+              />
+            </svg>
+          </div>
+
+          <div class="h-full relative z-10">
+            <div x-show.immediate="testimonialActive === 1">
+              <p
+                class="text-gray-600 font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl"
+                x-show.transition="testimonialActive == 1"
+              >
+                Leverage agile frameworks to provide a robust synopsis for high
+                level overviews. Iterative approaches to corporate strategy
+                foster collaborative thinking to further the overall value
+                proposition. Organically grow the holistic world view of
+                disruptive innovation via workplace diversity and empowerment.
+              </p>
+            </div>
+
+            <div x-show.immediate="testimonialActive === 2">
+              <p
+                class="text-gray-600 font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl"
+                x-show.transition="testimonialActive == 2"
+              >
+                Bring to the table win-win survival strategies to ensure
+                proactive domination. At the end of the day, going forward, a
+                new normal that has evolved from generation X is on the runway
+                heading towards a streamlined cloud solution. User generated
+                content in real-time will have multiple touchpoints for
+                offshoring.
+              </p>
+            </div>
+
+            <div x-show.immediate="testimonialActive === 3">
+              <p
+                class="text-gray-600 font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl"
+                x-show.transition="testimonialActive == 3"
+              >
+                Capitalize on low hanging fruit to identify a ballpark value
+                added activity to beta test. Override the digital divide with
+                additional clickthroughs from DevOps. Nanotechnology immersion
+                along the information highway will close the loop on focusing
+                solely on the bottom line.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex my-4 justify-center items-center">
+            <button
+              @click.prevent="testimonialActive = 1"
+              class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block rounded-full mx-2"
+              :class="{'h-12 w-12 opacity-25 bg-[#f3d8d0] text-gray-600': testimonialActive != 1, 'h-16 w-16 opacity-100 bg-[#7D4134] text-white': testimonialActive == 1 }"
+            >
+              JD
+            </button>
+            <button
+              @click.prevent="testimonialActive = 2"
+              class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-16 w-16 inline-block bg-indigo-600 rounded-full mx-2"
+              :class="{'h-12 w-12 opacity-25 bg-[#f3d8d0] text-gray-600': testimonialActive != 2, 'h-16 w-16 opacity-100 bg-[#7D4134] text-white': testimonialActive == 2 }"
+            >
+              WD
+            </button>
+            <button
+              @click.prevent="testimonialActive = 3"
+              class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-full mx-2"
+              :class="{'h-12 w-12 opacity-25 bg-[#f3d8d0] text-gray-600': testimonialActive != 3, 'h-16 w-16 opacity-100 bg-[#7D4134] text-white': testimonialActive == 3 }"
+            >
+              JW
+            </button>
+          </div>
+
+          <div class="flex justify-center px-6 pt-2 pb-6 md:py-6">
+            <div class="text-center" x-show="testimonialActive == 1">
+              <h2
+                class="text-sm md:text-base font-bold text-gray-700 leading-tight"
+              >
+                John Doe
+              </h2>
+              <small class="text-gray-500 text-xs md:text-sm truncate"
+                >CEO, ABC Inc.</small
+              >
+            </div>
+
+            <div class="text-center" x-show="testimonialActive == 2">
+              <h2
+                class="text-sm md:text-base font-bold text-gray-700 leading-tight"
+              >
+                Winter Doe
+              </h2>
+              <small class="text-gray-500 text-xs md:text-sm truncate"
+                >CTO, XYZ Corp.</small
+              >
+            </div>
+
+            <div class="text-center" x-show="testimonialActive == 3">
+              <h2
+                class="text-sm md:text-base font-bold text-gray-700 leading-tight"
+              >
+                John Wick
+              </h2>
+              <small class="text-gray-500 text-xs md:text-sm truncate"
+                >Product Manager, Fake Corp.</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer aria-label="Site Footer" class="bg-white lg:grid lg:grid-cols-5">
+      <div class="relative block h-32 lg:col-span-2 lg:h-full">
+        <img
+          src="https://images.unsplash.com/photo-1470072508653-1be229b63562?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+          alt=""
+          class="absolute inset-0 object-cover w-full h-full"
+        />
+      </div>
+
+      <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+          <div>
+            <p>
+              <span class="text-xs tracking-wide text-gray-500 uppercase">
+                Call us
+              </span>
+
+              <a
+                href="#"
+                class="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
+              >
+                0123456789
+              </a>
+            </p>
+
+            <ul class="mt-8 space-y-1 text-sm text-gray-700">
+              <li>Monday to Friday: 10am - 5pm</li>
+              <li>Weekend: 10am - 3pm</li>
+            </ul>
+
+            <ul class="flex gap-6 mt-8">
+              <li>
+                <a
+                  href="/"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75"
+                >
+                  <span class="sr-only">Facebook</span>
+
+                  <svg
+                    class="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75"
+                >
+                  <span class="sr-only">Instagram</span>
+
+                  <svg
+                    class="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75"
+                >
+                  <span class="sr-only">Twitter</span>
+
+                  <svg
+                    class="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75"
+                >
+                  <span class="sr-only">GitHub</span>
+
+                  <svg
+                    class="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition hover:opacity-75"
+                >
+                  <span class="sr-only">Dribbble</span>
+
+                  <svg
+                    class="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <p class="font-medium text-gray-900">Services</p>
+
+              <nav aria-label="Footer Navigation - Services" class="mt-6">
+                <ul class="space-y-4 text-sm">
                   <li>
-                    <a href="#" class="text-gray-500 transition hover:opacity-75">
-                      Terms & Conditions
+                    <a
+                      href="#"
+                      class="text-gray-700 transition hover:opacity-75"
+                    >
+                      1on1 Coaching
                     </a>
                   </li>
-      
+
                   <li>
-                    <a href="#" class="text-gray-500 transition hover:opacity-75">
-                      Privacy Policy
+                    <a
+                      href="#"
+                      class="text-gray-700 transition hover:opacity-75"
+                    >
+                      Company Review
                     </a>
                   </li>
-      
+
                   <li>
-                    <a href="#" class="text-gray-500 transition hover:opacity-75">
-                      Cookies
+                    <a
+                      href="#"
+                      class="text-gray-700 transition hover:opacity-75"
+                    >
+                      Accounts Review
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-700 transition hover:opacity-75"
+                    >
+                      HR Consulting
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-700 transition hover:opacity-75"
+                    >
+                      SEO Optimisation
                     </a>
                   </li>
                 </ul>
               </nav>
-      
-              <p class="mt-8 text-xs text-gray-500 sm:mt-0">
-                &copy; 2022. Company Name. All rights reserved.
-              </p>
+            </div>
+
+            <div>
+              <p class="font-medium text-gray-900">Company</p>
+
+              <nav aria-label="Footer Navigation - Company" class="mt-6">
+                <ul class="space-y-4 text-sm">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-700 transition hover:opacity-75"
+                    >
+                      About
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-700 transition hover:opacity-75"
+                    >
+                      Meet the Team
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-gray-700 transition hover:opacity-75"
+                    >
+                      Accounts Review
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
-      </footer>
-      
-    <script src="js/script.js"></script>
-</body>
 
+        <div class="pt-12 mt-12 border-t border-gray-100">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <nav aria-label="Footer Navigation - Support">
+              <ul class="flex flex-wrap gap-4 text-xs">
+                <li>
+                  <a href="#" class="text-gray-500 transition hover:opacity-75">
+                    Terms & Conditions
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-500 transition hover:opacity-75">
+                    Privacy Policy
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-500 transition hover:opacity-75">
+                    Cookies
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <p class="mt-8 text-xs text-gray-500 sm:mt-0">
+              &copy; 2022. Company Name. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
