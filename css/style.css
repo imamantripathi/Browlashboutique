@@ -29,7 +29,7 @@
   width: fit-content;
   text-align: center;
   margin: auto;
-  white-space: nowrap;
+  white-space: wrap;
   border: 2px solid #222;
   padding: 5px 11px 3px 11px;
 }
@@ -62,7 +62,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-block: min(20vh, 5em);
+  padding-block: min(15vh, 5em);
 }
 .main1 .item {
   width: 100%;
